@@ -1,0 +1,15 @@
+language: php
+php:
+- '5.3'
+
+script: true
+
+deploy:
+  provider: openshift
+  user: dz0ny@ubuntu.si
+  password:
+    secure: Th3nz+94UmtHihP98byCceOso9j+Hm2Eps40Aa+i78tgSqpeYFc2ItFQWtQ/cVlvCEof9Vh6qIh7bXht0T7KY8EObv8c4ZN2TVjk8aFzkti1NGGIVUKHf3b+OrkdaEv6umYLTW6Z3v7tMOHnrCM9dy0/o4xyLUzl00w4q1Bz0YU=
+  app: piwik
+  domain: ubuntusi
+  on:
+    repo: ubuntu-si/openshift-piwik
